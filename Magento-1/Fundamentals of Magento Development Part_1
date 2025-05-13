@@ -1,0 +1,66 @@
+
+Unit -1
+=======
+
+Fundamentals of Magento Development Part-1
+==========================================
+
+- Video intro
+- Using the Player
+- Introduction
+- Appropriate Audience
+- Course Content
+- Best Way to Take the Course
+- Unit One Home Page
+         |
+         |-----Preparation
+         |-----Overview & Architecture
+         |-----File System
+         |-----Development Operations
+         |-----DI & Object Manager
+         |-----Plugins
+         |-----Events
+         |-----Module Configuration
+
+         
+
+Preparation
+------------
+  -Module Topics
+  -LAMP & Composer
+  -Magento2 Installation
+  -Install Magento Part-1
+  -Install Magento Part-2
+  -Install Magento Part-3
+  -Install Magento Part-4
+
+
+Overview & Architecture
+-----------------------
+ - Module
+ - Platform
+ - Areas
+ - Magento-2 Essentials
+ - Components
+ - Paths
+ - File Types
+ - Config files
+ - PHP Classes
+ - Development Process
+ - Enable Custom Code
+ - Modules
+ - Location
+ - Naming a module
+ - Registering a Module/Empty Module Structure
+ - module.xml
+ - module.xml Example
+ - registration.php
+ - Module Dependencies
+ - Dependencies Tasks
+
+File System
+-----------
+
+
+
+ 

@@ -1,0 +1,68 @@
+GraphQl Basic
+-------------
+Query 
+Mutation 
+
+Question & Why Anyone Learn GraphQl
+====================================
+           -  Define what GraphQL is.
+             -  Explain what the advantages of GraphQL over REST API are.
+             -  Present the history of GraphQL.
+             - 
+
+
+Basic Overview Of GraphQl
+=========================
+It was created back in 2012-2015 by Facebook. 
+GraphQL is a query language for APIs and a runtime for fulfilling those queries with your existing data.
+ GraphQL provides a complete and understandable description of the data in your API.
+Magento 2 provides GraphQL functionalities and with the help of that our Magento database can be    used by some third-party service just by API call.
+The caller needs to authenticate some APIs before API call and for that, we need some customer information for authentications.
+
+
+Use Process
+=========== 
+ Need To Define the Schema for The Query(we mention which fields and which type of data return  in response).
+ Schema is a container of your type hierarchy(which accepts root types in a constructor and provides methods for receiving information about your types to internal GraphQL tools).
+
+Schema consists of two root types:
+----------------------------------
+- Query type is a surface of your read API
+- Mutation type (optional) exposes write API by declaring all possible mutations in your app.
+
+      Also
+        queries 
+               |
+               ----(for reading and receiving information) 
+        mutations
+                |
+                --- (needed for taking actions, creating data, and changing information, f.e. a customer’s email),
+     subscriptions 
+                 |
+                 ---- (this operation isn’t available in Magento yet but it provides the opportunity to get data from   the server in real-time automatically after a while, for instance, for notifications).   
+
+
+
+ 
+  
+GraphQl Request
+==============     
+        -  HTTP GET  & POST 
+        - Mutation must be -> POST request
+
+
+Define mutations
+==================
+A mutation definition contains the following information:
+
+             The mutation name
+             The input attributes and objects
+             The attributes and objects that can be returned in the output 
+             The path to the resolver
+
+Annotation
+==========
+   These are Annotation for Better use of GraphQl
+        
+                - @doc(description: "Any Text you Pass")
+                - @resolver(class: "Resolver Path")    
