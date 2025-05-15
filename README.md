@@ -1387,8 +1387,14 @@ E-Commerce Era (how it is working -- flipkart, amazon )
 </details>
 
 
+
+
+
+
+ # Learning At Work
+
+ ## ForeverNew (What I Learn at ForeverNew)
             
-# Magento Cloud Concept
 #### Push and Get Data to Staging Environment Using Ssh
 <details><summary><b>info</b></summary>    
     
@@ -1407,15 +1413,112 @@ E-Commerce Era (how it is working -- flipkart, amazon )
 </details>           
             
   
-#### Get some select table from staging environment
-<details><summary><b>info</b></summary>    
-    
-        Get some selected table from staging environment
-        ------------------------------------------------
-          bin/n98-magerun2.phar db:dump --strip="emarsys_events_data core_config_data cron_schedule emarsys_log_cron_schedule experius_emailcatcher forevernew_rma_quote  
-          eshopworld_extension_logs fn_riskify_whitelist gene_bluefoot_entity_text rating_option_vote review_detail integration legacym1_giftcardwebservice_giftcardlog 
-          magento_giftcardaccount_history mcom_api_messages mcom_logged_messages_queue os_search_result_customers_index password_reset_request_event webpos_staff emarsys_contact_field 
-          catalog_category_flat_store_* catalog_category_product_index_* catalog_product_flat_* catalogrule_product_price_* catalogrule_product_* catalogsearch_fulltext_* 
-          fredhopper_product_data_index_* queue_* salesrule_customer sequence_creditmemo_* sequence_invoice_* sequence_order_* sequence_rma_item_* sequence_shipment_* social_account adyen_* 
-          stockists_location_entity_ @mailchimp @temp @klarna @newrelic_reporting @2fa @dotmailer @development" -c gz var/backups/stg-db-strip_29Oct2024.sql.gz
+#### How to Take Table Dump From Staging Environment
+<details><summary><b>info</b></summary>  
+     
+          Login to magento cloud (here we are directly connecting to respective environment)
+
+             - magento-cloud ssh  --project=wh2okhswlvpuo --environment=staging-ded
+
+          Run this after logging  into cloud env to go inside the mysql and get the file or  (you can go inside any directory e.x - cd var/backups)
+
+            - mysqldump -uwh2okhswlvpuo_stg2 -p(Password) -h 127.0.0.1 wh2okhswlvpuo_stg2 | gzip > forevernew_sql_12.sql.gz
+ 
+          After this connect to the SFTP to get .sql File into Local
+
+           :- here for staging environment
+           
+                Go to any directory and run the below command (e.x - cd Downloads sftp 1.ent-wh2okhswlvpuo-staging-ded-yg3eyli@ssh.us-3.magentosite.cloud ) 
+                - sftp 1.ent-wh2okhswlvpuo-staging-ded-yg3eyli@ssh.us-3.magentosite.cloud
+                
+           :- here for production environment
+                - sftp 1.ent-wh2okhswlvpuo-production-vohbr3y@ssh.us-3.magentosite.cloud
+ 
+         Run this to get the file to local (Go to cd var/backups)
+
+             - Get fileName(e.x - forevernew_sql_12.sql.gz)
+
+         Unzip the File 
+
+             - gunzip < forevernew_sql_mar_10.gz | mysql -uroot -pAbhi@9902 forevernew
+     
 </details>
+
+#### How to Resolve Git Conflict
+<details><summary><b>info</b></summary>  
+
+    Creating a new branch for any task 
+ 
+         git checkout production
+         git pull origin production
+         git checkout -b feature/MS-0000 (Your branch name)
+         git add (File path)
+         git commit -m "MS-0000 new functionality for website"
+         git push origin feature/MS-0000     
+
+   Go to git UI and  create PR of "feature/MS-0000" against staging or release
+      If conflict comes in feature/MS-0000 against staging or release      
+
+        Go to your console or terminal
+
+             git checkout feature/MS-0000
+             git checkout -b resolve-conflicts/MS-0000 (New branch to resolve conflict)
+             git pull origin staging or release branch (Generally staging branch conflict will come)
+
+        Resolve conflict
+                  - You can see the conflicts on respective file (just resolved it - PhpStrom UI way or Manually)             
+
+              git add (File path)
+              git commit -m "MS-0000_resolve_conflict Fixed conflict issues"
+              git push origin resolve-conflicts/MS-0000 
+
+       Go to git UI create PR of "feature/MS-0000_resolve_conflict" against staging or release
+           Merge "feature/MS-0000_resolve_conflict" (In background feature/MS-0000 will also get resolved)
+
+    Smart Way : - 
+
+             git pull origin production
+             git checkout -b yourTaskBranchName
+             git pull origin staging
+
+      Do the development
+                git add files
+                git commit -m "your commit"
+                git push origin yourTaskBranchName  :- Go to git UI and  create PR of "yourTaskBranchName" against staging or release
+           
+
+</details>
+
+#### How to Setup X-Debug for Local and Staging Environment On Mac OS
+<details><summary><b>info</b></summary>
+
+     
+   Xdebug Setup For Local Development 
+    
+         - Install the Xdebug
+
+
+   Xdebug Setup For Staging Development
+
+         Xdebug For GUI 
+
+
+
+
+
+         Xdebug For CLI
+         
+         
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
