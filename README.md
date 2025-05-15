@@ -1,48 +1,105 @@
-### Best Debugging Hacks
 
-#### How to Connect XDebug to Staging Environment
-<details><summary><b> steps :  </b></summary>
-     - 
-</details>details>
+ # Adobe Commere or Magento
 
-# Complete_Adobe_Commerce_Guide
-complete adobe commerce(magento guide) - https://developer.adobe.com/commerce/php/development/roadmap/
+ ## BeCome A Good Magento Developer :- Any Where I Work for Any Task or Any Company
 
-
-Technology used for Magento(adobe commerce)
--------------------------------------------
-<details><summary><b>tech stack : - </b></summary>
-    - Php 
-    - Html
-    - Css
-    - Javascript
-    - Knockout JS
-    - Xml
-    - Jquery
-    - 
- </details>  
-
-Best Practices - no comparmise
-------------------------------
-### alway's remind - before start development
-<details><summary><b>info</b></summary>
-               
-                 - Before Code - Understood what is the Requirement
-                 - Some Time Directly Try - If you are not gettting 
-                 - Always Try with Dummy Value then Implement Real
-                 - Implement Oops Concept
-                            |
-                            |--- Divide code into small methods 
-                            |--- Write Clean Code (Proper Naming )
-                            |--- 
-                 -  Avoid the Deprecated Code
-                 -  Always follow vendor code and DevDocs
-                 -  Re-test the Scenario (twice )
-                 -  Optimize the Code (Best Way)
-                 -  Debug & Debug (Xdebug | Read Online | Logs | Hacks)
-    
- </details>  
+ ### Basics
  
+ <details><summary><b>Learn the Basic</b></summary>
+
+    Learn Basics 
+
+              - How the Framework
+         
+</details>
+
+ <details><summary><b>Learn All the Hacks How Good Way to Use : - The IDE or Editor :- Helps To Be Faster </b></summary>
+      
+      Learn What All Short Cut of Editor or IDE
+
+      
+      Learn How To Use Which Tools When
+    
+         -     
+</details>
+
+### Professional At Work
+
+<details><summary><b>Speak Smartly Alway's </b></summary>
+
+     Write Down All the Point's What Need to Be Ask and Tell Over Call
+
+            - What Task I Did , What is The Root Cause , Why It Is Taking Time 
+            - 
+     
+</details>
+
+<details><summary><b>Take All The Require Deatils Then Only Start the Work</b></summary>
+
+   - Everything Need To Be Tracked Over Email and JIRA Tickets
+    
+</details>
+
+<details><summary><b>Piorities the Work First - Ask the Piority</b></summary>
+         -     
+</details>
+
+<details><summary><b>Take the Responsibilites, Take Blame  and Take Credit Also - Finish the Work (Own the Task)</b></summary>
+         -     
+</details>
+
+<details><summary><b>Ask The Requirement Clearly</b></summary>
+         -     
+</details>
+
+<details><summary><b>Any Task No Worry - Just Understand Properly</b></summary>
+         -     
+</details>
+
+<details><summary><b>Be Active and Serious At Work</b></summary>
+         -     
+</details>
+
+<details><summary><b>Before Start Any Work :- It Help For Easy To Debug and Develop </b></summary>
+     
+          - Take the Latest Pull From Respective Branch (Sync the Code Base with Stage or Prod)
+          - Take DB Dump If Required
+          - Make the Local Same As Staging Environment
+          
+</details>
+
+<details><summary><b>Before Raise the PR (Complete Test All Scenario - No Second Time Work) </b></summary>
+     
+            - Alway's optmize the code
+            - Alway's Follow the Core Code Way and Latest Way
+            - Any Single Line of Code --> have the Comments
+            - May it take time but --- fix the wrong or old code (with proper comment)
+            - No Old Code ---> move to magento latest Way (also create the confluence page)
+            - Any Custom Code need to be at -respectice place (ex- apple pay frontend stuff ---> need to be in app/design vice versa)
+</details>
+
+<details><summary><b>Issue With Buggy Code and PR :- No Compermise at All</b></summary> 
+     
+            - It Will Take Time To Debug
+            - It Will Create NightMare When There Is An Issue
+            - No need to escape or hurry to do the code (be a  good developer ---> do atleast some good way --- when we will do then)
+
+</details>
+
+<details><summary><b>Benefit Of Good Practice</b></summary> 
+
+     - It Is Easy To Maintain the Code At Long Run
+     - It Is Easy To Implement New Feature
+     - It Will Make Life So Easy On --- Upcoming time
+     - It Easy To Change the Code Base To Other Tech Stack
+     - It Give Clear Idea :- For Cost Optimization
+</details>
+
+
+# Debug Is Coding (:How Good Debug =?!?= That Good Developer):
+
+## Quickest Way To Debug
+
 ### Print Logs
 <details><summary><b>info</b></summary>
   
@@ -52,34 +109,9 @@ Best Practices - no comparmise
           $logger->info('This Is Simple Text Log'); //To print simple text log
           $logger->info(print_r($myarray, true)); //To print array log  
  
-</details>  
+</details> 
 
- ### exception handling
-<details><summary><b>infp</b></summary>
-    
-             try { echo 'Perferom your Operation'; } catch(Exception $e) { echo 'Message: ' .$e->getMessage(); }
-               try {
-                   //check if
-                     var $test = "TEST";
-                     if(($test) === "TEST") {
-                     //throw exception if condition is not valid
-                     throw new customException($test);
-                 }
-                  //check for "TEST" in dummy value
-                   if(strpos($test, "TEST") !== FALSE) 
-                   {
-                    throw new Exception("$test is an example Dummy Value");
-                  }
-                 }
-                 catch (customException $e) {
-                    echo $e->errorMessage();
-                    }
-                 catch(Exception $e) {
-                  echo $e->getMessage();
-                }  
-  </details>
-
-### Setup coding standards
+### SetUp Best Practice - Where Ever Doing Work
 <details><summary><b>Setup coding standards</b></summary>
     
               Step - 1
@@ -113,12 +145,9 @@ Best Practices - no comparmise
      
 </details> 
 
-### Debug untill fix - no matter what
-<details><summary><b>info</b></summary>
-    
-</details>  
-     
-</details>   
+ 
+# Complete_Adobe_Commerce_Guide
+complete adobe commerce(magento guide) - https://developer.adobe.com/commerce/php/development/roadmap/  
 
 History of Magento(Adobe Commerce)
 ----------------------------------
