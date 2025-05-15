@@ -36,28 +36,17 @@
 
 <details><summary><b>Take All The Require Deatils Then Only Start the Work</b></summary>
 
-   - Everything Need To Be Tracked Over Email and JIRA Tickets
+        Everything Need To Be Tracked Over Email and JIRA Tickets
+        Ask The Requirement Clearly
     
 </details>
 
-<details><summary><b>Piorities the Work First - Ask the Piority</b></summary>
-         -     
-</details>
-
 <details><summary><b>Take the Responsibilites, Take Blame  and Take Credit Also - Finish the Work (Own the Task)</b></summary>
-         -     
-</details>
-
-<details><summary><b>Ask The Requirement Clearly</b></summary>
-         -     
-</details>
-
-<details><summary><b>Any Task No Worry - Just Understand Properly</b></summary>
-         -     
-</details>
-
-<details><summary><b>Be Active and Serious At Work</b></summary>
-         -     
+    
+       - Any Task No Worry - Just Understand Properly
+       - Piorities the Work First - Ask the Piority
+       - Be Active and Serious At Work
+       
 </details>
 
 <details><summary><b>Before Start Any Work :- It Help For Easy To Debug and Develop </b></summary>
