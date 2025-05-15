@@ -1414,34 +1414,33 @@ E-Commerce Era (how it is working -- flipkart, amazon )
             
   
 #### How to Take Table Dump From Staging Environment
-<details><summary><b>info</b></summary>  
+<details><summary><b>info</b></summary>
      
-          Login to magento cloud (here we are directly connecting to respective environment)
-
+     Login to magento cloud (here we are directly connecting to respective environment)
+     
              - magento-cloud ssh  --project=wh2okhswlvpuo --environment=staging-ded
-
-          Run this after logging  into cloud env to go inside the mysql and get the file or  (you can go inside any directory e.x - cd var/backups)
-
-            - mysqldump -uwh2okhswlvpuo_stg2 -p(Password) -h 127.0.0.1 wh2okhswlvpuo_stg2 | gzip > forevernew_sql_12.sql.gz
- 
-          After this connect to the SFTP to get .sql File into Local
-
-           :- here for staging environment
-           
-                Go to any directory and run the below command (e.x - cd Downloads sftp 1.ent-wh2okhswlvpuo-staging-ded-yg3eyli@ssh.us-3.magentosite.cloud ) 
-                - sftp 1.ent-wh2okhswlvpuo-staging-ded-yg3eyli@ssh.us-3.magentosite.cloud
-                
-           :- here for production environment
-                - sftp 1.ent-wh2okhswlvpuo-production-vohbr3y@ssh.us-3.magentosite.cloud
- 
-         Run this to get the file to local (Go to cd var/backups)
-
-             - Get fileName(e.x - forevernew_sql_12.sql.gz)
-
-         Unzip the File 
-
-             - gunzip < forevernew_sql_mar_10.gz | mysql -uroot -pAbhi@9902 forevernew
+             
+     Run this after logging  into cloud env to go inside the mysql and get the file or  (you can go inside any directory e.x - cd var/backups)
      
+            - mysqldump -uwh2okhswlvpuo_stg2 -p(Password) -h 127.0.0.1 wh2okhswlvpuo_stg2 | gzip > forevernew_sql_12.sql.gz
+            
+     After this connect to the SFTP to get .sql File into Local
+     
+            :- here for staging environment
+            
+            Go to any directory and run the below command (e.x - cd Downloads sftp 1.ent-wh2okhswlvpuo-staging-ded-yg3eyli@ssh.us-3.magentosite.cloud )
+                 - sftp 1.ent-wh2okhswlvpuo-staging-ded-yg3eyli@ssh.us-3.magentosite.cloud
+                 
+            :- here for production environment
+                 - sftp 1.ent-wh2okhswlvpuo-production-vohbr3y@ssh.us-3.magentosite.cloud
+                 
+     Run this to get the file to local (Go to cd var/backups)
+     
+            - Get fileName(e.x - forevernew_sql_12.sql.gz)
+            
+     Unzip the File 
+     
+            - gunzip < forevernew_sql_mar_10.gz | mysql -uroot -pAbhi@9902 forevernew
 </details>
 
 #### How to Resolve Git Conflict
