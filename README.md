@@ -1433,29 +1433,29 @@ E-Commerce Era (how it is working -- flipkart, amazon )
   
 #### How to Take Table Dump From Staging Environment
 <details><summary><b>info</b></summary>
-     
-     Login to magento cloud (here we are directly connecting to respective environment)
-     
-             - magento-cloud ssh  --project=wh2okhswlvpuo --environment=staging-ded
-             
-     Run this after logging  into cloud env to go inside the mysql and get the file or  (you can go inside any directory e.x - cd var/backups)
-     
-            - mysqldump -uwh2okhswlvpuo_stg2 -p(Password) -h 127.0.0.1 wh2okhswlvpuo_stg2 | gzip > forevernew_sql_12.sql.gz
-            
+    
+     Staging Database Export
+     =======================
+        Connect to Cloud  
+         ------------------
+            - magento-cloud ssh
+            - choose the respective environment 
+
+      Run this command to Get the DB Dump
+     ------------------------------------
+           - Go to respective directory where want to keep the file (e.g - e.x - cd var/backups )
+           -  mysqldump -uwh2okhswlvpuo_stg2 -pVTdE8ZvbZC7FfLM -h 127.0.0.1 wh2okhswlvpuo_stg2 | gzip > forevernew_sql_12.sql.gz
+
      After this connect to the SFTP to get .sql File into Local
-     
-            :- here for staging environment
-            
-            Go to any directory and run the below command (e.x - cd Downloads sftp 1.ent-wh2okhswlvpuo-staging-ded-yg3eyli@ssh.us-3.magentosite.cloud )
-                 - sftp 1.ent-wh2okhswlvpuo-staging-ded-yg3eyli@ssh.us-3.magentosite.cloud
-                 
-            :- here for production environment
-                 - sftp 1.ent-wh2okhswlvpuo-production-vohbr3y@ssh.us-3.magentosite.cloud
-                 
-     Run this to get the file to local (Go to cd var/backups)
-     
-            - Get fileName(e.x - forevernew_sql_12.sql.gz)
-            
+     -------------------------------------------------------   
+          - Run this command inside some directory where you want to keep on local(e.x - cd Downloads)
+          - sftp 1.ent-wh2okhswlvpuo-staging-ded-yg3eyli@ssh.us-3.magentosite.cloud
+          - Get fileName(e.x - Get forevernew_sql_12.sql.gz)
+
+     Production Database Export
+     ==========================
+             - same step as staging only - change userName and Password
+
      Unzip the File 
      
             - gunzip < forevernew_sql_mar_10.gz | mysql -uroot -pAbhi@9902 forevernew
