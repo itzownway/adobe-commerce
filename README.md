@@ -17,11 +17,12 @@ complete adobe commerce(magento guide) - https://developer.adobe.com/commerce/ph
                Basic                Intermediate              Advance
       
 ### Basic
----------
+----------
   - Core Tech Stack 
   
   - PHP
     <details><summary><b>info: </b></summary>
+     
             |
             |------ How Php code get executed
             |------ Php is a which type of language compiled or interpreted
@@ -125,7 +126,9 @@ complete adobe commerce(magento guide) - https://developer.adobe.com/commerce/ph
     </details> 
 
   - Service Contract
+    
       <details><summary><b>info</b></summary>
+       
                |
                |------What is Service contract
                |                 |-----------why should any one implement Service contract in magento
@@ -147,6 +150,7 @@ complete adobe commerce(magento guide) - https://developer.adobe.com/commerce/ph
   
   - Dependency Injection
        <details><summary><b>info</b></summary>  
+        
                  |-----deffination
                  |-----diff ways or types of injection(constructor,method, by declaring di.xml way)
                  |-----require file to implement the injection
@@ -684,10 +688,10 @@ complete adobe commerce(magento guide) - https://developer.adobe.com/commerce/ph
 
 ### Intermediate
 -----------------
+- Indexing
 
 <details><summary><b>info</b></summary>
-      Indexing
-      ========
+ 
         |
         |---What is Indexing in Magento
         |               |-------Why we need Indexing
@@ -704,35 +708,33 @@ complete adobe commerce(magento guide) - https://developer.adobe.com/commerce/ph
                                                           |-----how mview file is link with other files and help cron job to work      
     
     
-![Screenshot from 2022-05-28 19-30-43](https://user-images.githubusercontent.com/78407424/170829798-5186503c-dead-4948-a22e-c9620b424515.png)
+ ![Screenshot from 2022-05-28 19-30-43](https://user-images.githubusercontent.com/78407424/170829798-5186503c-dead-4948-a22e-c9620b424515.png)
 
-</details> 
+ </details> 
 
  - Caching
-    <details><summary><b>info</b></summary> 
+
+   <details><summary><b>info</b></summary> 
     
-    Caching 
-    =======
-      |
-      |----------what is caching
-      |                    |-------why we need caching in magento 
-      |                    |-------how to know is cache is enable for particular section in magento
-      |                    |-------if we declare cache is false then what happen 
-      |                    |-------how to know is the site is full cache enabled
-      |
-      |----------What are all the way to know is the page is cache enable and how to achieve 
-      |
-      |---------how many types of cache mechanism
-      |                           |---------------what is public content(server side)
-      |                           |                            
-      |                           |---------------what is private content(client side) 
-      |                                                      |------------what type of data is called private content
-      |--------how cahce is related with
-                                      |------varnih
-                                      |------redis
-                                      |------Opchache
-                                      |------JIT
-                                      |------Zend Engine 
+         |----------what is caching 
+         |                    |-------why we need caching in magento 
+         |                    |-------how to know is cache is enable for particular section in magento
+         |                    |-------if we declare cache is false then what happen 
+         |                    |-------how to know is the site is full cache enabled
+         |
+         |----------What are all the way to know is the page is cache enable and how to achieve 
+         |
+         |---------how many types of cache mechanism
+         |                           |---------------what is public content(server side)
+         |                           |                            
+         |                           |---------------what is private content(client side) 
+         |                                                      |------------what type of data is called private content
+         |--------how cahce is related with
+                                         |------varnih
+                                         |------redis
+                                         |------Opchache
+                                         |------JIT
+                                         |------Zend Engine 
 
    ![caching_5](https://user-images.githubusercontent.com/78407424/170829843-dc40a7ba-3ebc-40b3-9e6b-1eb3dfd0b73a.png)
 
@@ -795,6 +797,7 @@ complete adobe commerce(magento guide) - https://developer.adobe.com/commerce/ph
    ![api](https://user-images.githubusercontent.com/78407424/229434266-befbda7b-674b-4156-9a62-75c8a9d37319.png)
     
     <details><summary><b>info</b></summary>
+     
          - http://magento.local(base_url)/swagger#/
          
                         |
@@ -810,6 +813,7 @@ complete adobe commerce(magento guide) - https://developer.adobe.com/commerce/ph
     </details> 
 
  - GraphQl Api in Magento(Resolver & schema.graphqls)
+   
         <details><summary><b>info</b></summary>
          - http://magento.local(base_url)/swagger#/
          
@@ -835,6 +839,7 @@ complete adobe commerce(magento guide) - https://developer.adobe.com/commerce/ph
 
  - Order Flow 
     <details><summary><b>order concept</b></summary> 
+     
         Order Flow: 
             New: when customers just created an order and have not made any payment
             Pending: when the invoice and shipment have not been created
@@ -843,6 +848,7 @@ complete adobe commerce(magento guide) - https://developer.adobe.com/commerce/ph
             On hold: admins can assign the On hold status manually
             Canceled: when the order has not been paid for, the store admin or the payment gateway will decide to put this status.
             Closed: a credit memo is included and the refund has been made.
+   
     </details>
 
  - Third Party Integration
