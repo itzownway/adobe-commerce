@@ -20,7 +20,7 @@ complete adobe commerce(magento guide) - https://developer.adobe.com/commerce/ph
 ---------
   - Core Tech Stack 
   
-  - PHP 
+  - PHP
     <details><summary><b>info: </b></summary>
             |
             |------ How Php code get executed
@@ -91,7 +91,7 @@ complete adobe commerce(magento guide) - https://developer.adobe.com/commerce/ph
 
   - Codding Standard 
 
-        <details><summary><b>Setup coding standards</b></summary>
+    <details><summary><b>Setup coding standards</b></summary>
     
               Step - 1
               --------
@@ -227,7 +227,7 @@ complete adobe commerce(magento guide) - https://developer.adobe.com/commerce/ph
      <details><summary><b>info</b></summary>
        - di.xml is having higher priority rather than constructor
 
-        ![Proxy_2](https://user-images.githubusercontent.com/78407424/170829650-ccf014c8-d401-4af4-aed3-a8ea578d9482.png)
+      ![Proxy_2](https://user-images.githubusercontent.com/78407424/170829650-ccf014c8-d401-4af4-aed3-a8ea578d9482.png)
      </details>   
 
   - Magento Fundamentals Part-1
@@ -741,9 +741,7 @@ complete adobe commerce(magento guide) - https://developer.adobe.com/commerce/ph
 
  - EAV
      <details><summary><b>info</b></summary>
-    
-           EAV 
-          =======
+
             |--------what is EAV
             |                 |----Why Magento implement EAV concept why not other concept to manage the data
             |                 |----How many types of entity table in magento(9)
@@ -771,9 +769,8 @@ complete adobe commerce(magento guide) - https://developer.adobe.com/commerce/ph
                                
     </details>
 
-    
-### how to setup multiple store
-<details><summary><b>info</b></summary>
+ - how to setup multiple store
+    <details><summary><b>info</b></summary>
             
             Link - https://www.youtube.com/watch?v=1HrOfr8e96A
             
@@ -792,8 +789,7 @@ complete adobe commerce(magento guide) - https://developer.adobe.com/commerce/ph
                 $params[\Magento\Store\Model\StoreManager::PARAM_RUN_CODE] = $runCode;
                 $params[\Magento\Store\Model\StoreManager::PARAM_RUN_TYPE] = $websiteType;
                 
-    </details>  
-</details>     
+     </details>   
 
  - API's 
    ![api](https://user-images.githubusercontent.com/78407424/229434266-befbda7b-674b-4156-9a62-75c8a9d37319.png)
