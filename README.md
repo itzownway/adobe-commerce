@@ -92,7 +92,7 @@ complete adobe commerce(magento guide) - https://developer.adobe.com/commerce/ph
 
   - Codding Standard 
 
-    <details><summary><b>Setup coding standards</b></summary>
+    <details><summary><b>coding-standards</b></summary>
     
               Step - 1
               --------
@@ -218,17 +218,21 @@ complete adobe commerce(magento guide) - https://developer.adobe.com/commerce/ph
   
   - Type and Virtual Type
       <details><summary><b>info</b></summary>      
+       
       ![type_virtualtype](https://user-images.githubusercontent.com/78407424/216369559-323f1132-c4f6-46e7-a039-21fc51bfe545.png)
+    
     </details>
 
   - Factories (Factory Class) 
      <details><summary><b>info</b></summary>
+      
        ![Factories_3](https://user-images.githubusercontent.com/78407424/170829686-0171959b-3bb8-4469-a952-92ad24aca85d.png)
     
      </details>
 
   - Proxy 
      <details><summary><b>info</b></summary>
+      
        - di.xml is having higher priority rather than constructor
 
       ![Proxy_2](https://user-images.githubusercontent.com/78407424/170829650-ccf014c8-d401-4af4-aed3-a8ea578d9482.png)
