@@ -694,7 +694,7 @@ complete adobe commerce(magento guide) - https://developer.adobe.com/commerce/ph
 -----------------
 - Indexing
 
-<details><summary><b>info</b></summary>
+     <details><summary><b>info</b></summary>
  
         |
         |---What is Indexing in Magento
@@ -712,9 +712,9 @@ complete adobe commerce(magento guide) - https://developer.adobe.com/commerce/ph
                                                           |-----how mview file is link with other files and help cron job to work      
     
     
- ![Screenshot from 2022-05-28 19-30-43](https://user-images.githubusercontent.com/78407424/170829798-5186503c-dead-4948-a22e-c9620b424515.png)
+    ![Screenshot from 2022-05-28 19-30-43](https://user-images.githubusercontent.com/78407424/170829798-5186503c-dead-4948-a22e-c9620b424515.png)
 
- </details> 
+    </details> 
 
  - Caching
 
