@@ -797,9 +797,12 @@ complete adobe commerce(magento guide) - https://developer.adobe.com/commerce/ph
                 
      </details>   
 
- - API's 
+ - API's
+
+ - REST API
+
    ![api](https://user-images.githubusercontent.com/78407424/229434266-befbda7b-674b-4156-9a62-75c8a9d37319.png)
-    
+      
     <details><summary><b>info</b></summary>
      
          - http://magento.local(base_url)/swagger#/
@@ -817,20 +820,8 @@ complete adobe commerce(magento guide) - https://developer.adobe.com/commerce/ph
     </details> 
 
  - GraphQl Api in Magento(Resolver & schema.graphqls)
+
    
-        <details><summary><b>info</b></summary>
-         - http://magento.local(base_url)/swagger#/
-         
-                        |
-                        |------First check the active mode website is running
-                        |                                              |-----------sudo bin/magento deploy:mode:show
-                        |----- If It is in default mode then chane it to "developer"
-                        |                                                     |--------- sudo bin/magento deploy:mode:set developer (do se:up & ca:fl)
-                        |
-                        |----Some time it will not work So Check Below Configuration
-                                      |
-                                      |--------------Stores > Settings > Configuration > Advanced > Developer
-                                                                                                                              |-------Swagger----->Enabled Yes/No (make it Yes)
     </details> 
 
 
